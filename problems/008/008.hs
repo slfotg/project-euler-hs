@@ -10,7 +10,7 @@ readDigits file = do
 getMaxProduct :: Int -> [Int] -> Int
 getMaxProduct iterations digits = getMaxProduct' 1 digits digits
     where
-        getMaxProduct' i digits'@(d:ds) products
+        getMaxProduct' i digits'@(_:ds) products
             | i == iterations = maximum products
             | otherwise       = getMaxProduct' (i + 1) ds $ zipWith (*) digits' products
 
