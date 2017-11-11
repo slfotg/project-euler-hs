@@ -1,0 +1,101 @@
+name:                project-euler-hs
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/slfotg/project-euler-hs#readme
+author:              Sam Foster
+maintainer:          slfotg@gmail.com
+copyright:           2017 Sam Foster
+category:            project-euler
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+-- library
+--  hs-source-dirs:      src
+--  exposed-modules:     Lib
+--  build-depends:       base >= 4.7 && < 5
+--  default-language:    Haskell2010
+
+executable 001
+  hs-source-dirs:      problems/001
+  main-is:             001.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 002
+  hs-source-dirs:      problems/002
+  main-is:             002.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 003
+  hs-source-dirs:      problems/003
+  main-is:             003.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 004
+  hs-source-dirs:      problems/004
+  main-is:             004.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 005
+  hs-source-dirs:      problems/005
+  main-is:             005.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 006
+  hs-source-dirs:      problems/006
+  main-is:             006.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 007
+  hs-source-dirs:      problems/007
+  main-is:             007.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 008
+  hs-source-dirs:      problems/008
+  main-is:             008.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 009
+  hs-source-dirs:      problems/009
+  main-is:             009.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 010
+  hs-source-dirs:      problems/010
+  main-is:             010.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+-- test-suite helloworld-test
+--  type:                exitcode-stdio-1.0
+--  hs-source-dirs:      test
+--  main-is:             Spec.hs
+--  build-depends:       base
+--                     , helloworld
+--  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+--  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/slfotg/project-euler-hs
