@@ -4,7 +4,7 @@
 A repository of Project Euler solutions used for me to learn Haskell.
 
 ### Requirements:
-    - [Haskell Stack](https://docs.haskellstack.org/en/stable/README/)
+* [Haskell Stack](https://docs.haskellstack.org/en/stable/README/)
 
 ### Usage:
     stack build
