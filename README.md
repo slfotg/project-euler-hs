@@ -11,5 +11,6 @@ A repository of Project Euler solutions used for me to learn Haskell.
     $ stack exec <problem number>
 
 Example:
+
     $ stack exec 001
-        233168
+    233168
