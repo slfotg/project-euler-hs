@@ -4,5 +4,5 @@ readNumbers = fmap (map read) . fmap lines . readFile
 
 main :: IO ()
 main = do
-    numbers <- readNumbers "013.txt"
+    numbers <- readNumbers "problems/013/013.txt"
     putStrLn . (take 10) . show $ sum numbers

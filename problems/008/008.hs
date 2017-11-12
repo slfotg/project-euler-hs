@@ -17,5 +17,5 @@ getMaxProduct iterations digits = getMaxProduct' 1 digits digits
 
 main :: IO ()
 main = do
-    digits <- readDigits "008.txt"
+    digits <- readDigits "problems/008/008.txt"
     putStrLn . show $ getMaxProduct 13 digits

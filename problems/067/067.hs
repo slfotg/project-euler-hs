@@ -15,4 +15,4 @@ getMax :: [[Int]] -> Int
 getMax = maximum . foldl getPartialMax []
 
 main :: IO ()
-main = fmap getMax (readNumbers "067.txt") >>= putStrLn . show 
+main = fmap getMax (readNumbers "problems/067/067.txt") >>= putStrLn . show 
