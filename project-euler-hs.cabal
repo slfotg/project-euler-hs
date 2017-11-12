@@ -87,9 +87,58 @@ executable 010
   build-depends:       base
   default-language:    Haskell2010
 
+executable 012
+  hs-source-dirs:      problems/012
+  main-is:             012.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 013
+  hs-source-dirs:      problems/013
+  main-is:             013.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 015
+  hs-source-dirs:      problems/015
+  main-is:             015.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 016
+  hs-source-dirs:      problems/016
+  main-is:             016.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 018
+  hs-source-dirs:      problems/018
+  main-is:             018.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 020
+  hs-source-dirs:      problems/020
+  main-is:             020.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
 executable 025
   hs-source-dirs:      problems/025
   main-is:             025.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable 067
+  hs-source-dirs:      problems/067
+  main-is:             067.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
   default-language:    Haskell2010
