@@ -7,6 +7,7 @@ A repository of Project Euler solutions used for me to learn Haskell.
 * [Haskell Stack](https://docs.haskellstack.org/en/stable/README/)
 
 ### Usage:
+    $ stack setup
     $ stack build
     $ stack exec <problem number>
 
