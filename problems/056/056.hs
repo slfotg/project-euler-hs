@@ -1,4 +1,4 @@
-import Digits (digitSum)
+import Number.Util (digitSum)
 
 aTob :: [Integer] -> [Integer]
 aTob xs = pure (^) <*> xs <*> xs
