@@ -1,4 +1,4 @@
-## Problem 36 - [Digit factorials](https://projecteuler.net/problem=36)
+## Problem 36 - [Double-base palindromes](https://projecteuler.net/problem=36)
 
 The decimal number, 585 = 1001001001<sub>2</sub> (binary), is palindromic in both bases.
 
