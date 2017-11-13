@@ -1,10 +1,4 @@
-import Data.Char (digitToInt)
-
-digits :: Integer -> [Int]
-digits = (map digitToInt) . show
-
-digitSum :: Integer -> Int
-digitSum = sum . digits
+import Digits (digitSum)
 
 aTob :: [Integer] -> [Integer]
 aTob xs = pure (^) <*> xs <*> xs
