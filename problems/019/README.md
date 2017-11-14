@@ -1,4 +1,4 @@
-## Problem 19 - [Counting Sundayse](https://projecteuler.net/problem=19)
+## Problem 19 - [Counting Sundays](https://projecteuler.net/problem=19)
 
 You are given the following information, but you may prefer to do some research for yourself.
 
