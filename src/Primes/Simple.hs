@@ -1,7 +1,9 @@
 module Primes.Simple (
     primes,
     allPrimes,
-    primeFactors ) where
+    primeFactors,
+    countFactors,
+    allFactors ) where
 
 import Data.List (group)
 
