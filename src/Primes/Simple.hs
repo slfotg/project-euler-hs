@@ -40,5 +40,5 @@ allFactors :: Int -> [Int]
 allFactors xs = foldr accum [1] . map powers . group $ primeFactors xs
     where
         powers :: [Int] -> [Int]
-        powers xs = 1 : (zipWith (^) xs [1..])
+        powers = scanl (*) 1
         accum xs ys = (*) <$> xs <*> ys
