@@ -2,7 +2,8 @@ module Number.Util (
     digits,
     digitSum,
     countDigits,
-    factorial ) where
+    factorial,
+    digitFactorialSum ) where
 
 import Data.Char (digitToInt)
 
@@ -15,6 +16,9 @@ digitSum = sum . digits
 countDigits :: Integral a => a -> Int
 countDigits = length . digits
 
-factorial :: Integral a => a -> Integer
+factorial :: Integral a => a -> a
 factorial 0 = 1
-factorial x = (toInteger x) * (factorial (x - 1))
+factorial x = x * (factorial (x - 1))
+
+digitFactorialSum :: Integral a => a -> Int
+digitFactorialSum = sum . map factorial . digits
