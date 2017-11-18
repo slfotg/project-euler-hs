@@ -167,6 +167,14 @@ executable 022
   build-depends:       base
   default-language:    Haskell2010
 
+executable 023
+  hs-source-dirs:      problems/023
+  main-is:             023.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , containers
+  default-language:    Haskell2010
+
 executable 024
   hs-source-dirs:      problems/020
   main-is:             020.hs
