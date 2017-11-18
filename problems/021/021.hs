@@ -20,8 +20,7 @@ amicableFilter m k a
 
 amicables :: [Int]
 amicables = let divisorSums = properDivisorSums 25320 in
-    map fst . Map.toList
-    $ Map.filterWithKey (amicableFilter divisorSums) divisorSums
+    Map.keys $ Map.filterWithKey (amicableFilter divisorSums) divisorSums
 
 main :: IO ()
 main = putStrLn . show $ sum amicables
