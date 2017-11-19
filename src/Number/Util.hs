@@ -2,6 +2,7 @@ module Number.Util (
     digits,
     digitSum,
     countDigits,
+    rotations,
     factorial,
     digitFactorialSum ) where
 
@@ -15,6 +16,13 @@ digitSum = sum . digits
 
 countDigits :: Integral a => a -> Int
 countDigits = length . digits
+
+rotations :: (Read a, Integral a) => a -> [a]
+rotations n = take (countDigits n) $ iterate rotate n
+    where
+        rotate :: (Read a, Integral a) => a -> a
+        rotate n = let (d:ds) = show $ toInteger n in
+            read (ds ++ [d])
 
 factorial :: Integral a => a -> a
 factorial 0 = 1
