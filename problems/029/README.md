@@ -1,6 +1,6 @@
 ## Problem 29 - [Distinct powers](https://projecteuler.net/problem=29)
 
-Consider all integer combinations of ab for 2 ≤ *a* ≤ 5 and 2 ≤ *b* ≤ 5:
+Consider all integer combinations of *a*<sup>*b*</sup> for 2 ≤ *a* ≤ 5 and 2 ≤ *b* ≤ 5:
 
 2<sup>2</sup>=4, 2<sup>3</sup>=8, 2<sup>4</sup>=16, 2<sup>5</sup>=32<br />
 3<sup>2</sup>=9, 3<sup>3</sup>=27, 3<sup>4</sup>=81, 3<sup>5</sup>=243<br />
