@@ -4,7 +4,8 @@ module Number.Util (
     countDigits,
     rotations,
     factorial,
-    digitFactorialSum ) where
+    digitFactorialSum,
+    choose ) where
 
 import Data.Char (digitToInt)
 
@@ -30,3 +31,6 @@ factorial x = (toInteger x) * (factorial (x - 1))
 
 digitFactorialSum :: Integral a => a -> Integer
 digitFactorialSum = sum . map factorial . digits
+
+choose :: Integral a => a -> a -> Integer
+choose n r = factorial n `div` factorial r `div` factorial (n - r)
