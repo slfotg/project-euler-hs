@@ -24,9 +24,9 @@ rotations n = take (countDigits n) $ iterate rotate n
         rotate n = let (d:ds) = show $ toInteger n in
             read (ds ++ [d])
 
-factorial :: Integral a => a -> a
+factorial :: Integral a => a -> Integer
 factorial 0 = 1
-factorial x = x * (factorial (x - 1))
+factorial x = (toInteger x) * (factorial (x - 1))
 
-digitFactorialSum :: Integral a => a -> Int
+digitFactorialSum :: Integral a => a -> Integer
 digitFactorialSum = sum . map factorial . digits

@@ -25,7 +25,7 @@ getChainLengths m n = m `union` getChainLengths' m empty n 0
                 else if n `member` c
                     then fmap (update (ix - (c ! n)) (c ! n)) c
                     else getChainLengths' m (insert n ix c)
-                                          (digitFactorialSum n) (ix + 1)
+                            (fromInteger $ digitFactorialSum n) (ix + 1)
         update :: Int -> Int -> Int -> Int
         update cycleLength x n =
             if (n < x)
