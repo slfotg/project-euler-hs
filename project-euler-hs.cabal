@@ -240,6 +240,13 @@ executable 031
   build-depends:       base
   default-language:    Haskell2010
 
+executable 033
+  hs-source-dirs:      problems/033
+  main-is:             033.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
 executable 034
   hs-source-dirs:      problems/034
   main-is:             034.hs
