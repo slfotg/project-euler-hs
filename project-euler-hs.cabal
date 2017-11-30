@@ -399,6 +399,15 @@ executable 123
                      , primes
   default-language:    Haskell2010
 
+executable 124
+  hs-source-dirs:      problems/124
+  main-is:             124.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , containers
+                     , primes
+  default-language:    Haskell2010
+
 executable 172
   hs-source-dirs:      problems/172
   main-is:             172.hs
