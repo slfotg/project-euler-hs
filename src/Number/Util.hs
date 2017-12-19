@@ -5,7 +5,8 @@ module Number.Util (
     rotations,
     factorial,
     digitFactorialSum,
-    choose ) where
+    choose,
+    pascal ) where
 
 import Data.Char (digitToInt)
 
@@ -34,3 +35,10 @@ digitFactorialSum = sum . map factorial . digits
 
 choose :: Integral a => a -> a -> Integer
 choose n r = factorial n `div` factorial r `div` factorial (n - r)
+
+pascal :: [[Integer]]
+pascal = iterate pascal' [1]
+    where
+        pascal' xs = 1 : next xs
+        next (a:b:cs) = (a + b) : next (b:cs)
+        next (_:[])   = [1]
