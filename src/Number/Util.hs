@@ -5,10 +5,12 @@ module Number.Util (
     rotations,
     factorial,
     digitFactorialSum,
+    countPermutations,
     choose,
     pascal ) where
 
 import Data.Char (digitToInt)
+import Data.List (group)
 
 digits :: Integral a => a -> [Int]
 digits = map digitToInt . show . toInteger
@@ -32,6 +34,10 @@ factorial x = (toInteger x) * (factorial (x - 1))
 
 digitFactorialSum :: Integral a => a -> Integer
 digitFactorialSum = sum . map factorial . digits
+
+countPermutations :: Eq a => [a] -> Integer
+countPermutations xs = div (factorial $ length xs)
+                          $ product . map (factorial . length) $ group xs
 
 choose :: Integral a => a -> a -> Integer
 choose n r = factorial n `div` factorial r `div` factorial (n - r)
