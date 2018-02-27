@@ -454,6 +454,14 @@ executable 226
   build-depends:       base
   default-language:    Haskell2010
 
+executable 323
+  hs-source-dirs:      problems/323
+  main-is:             323.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , project-euler-hs
+  default-language:    Haskell2010
+
 executable 595
   hs-source-dirs:      problems/595
   main-is:             595.hs
