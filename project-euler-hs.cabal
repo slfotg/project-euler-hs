@@ -5,7 +5,7 @@ version:             0.1.0.0
 homepage:            https://github.com/slfotg/project-euler-hs#readme
 author:              Sam Foster
 maintainer:          slfotg@gmail.com
-copyright:           2017 Sam Foster
+copyright:           2018 Sam Foster
 category:            project-euler
 build-type:          Simple
 extra-source-files:  README.md
@@ -16,7 +16,9 @@ library
   exposed-modules:     Number.Util
                      , Data.LookupTree
                      , Primes.Simple
+                     , PE.Primes
   build-depends:       base >= 4.7 && < 5
+                     , primes
   default-language:    Haskell2010
 
 executable 001
