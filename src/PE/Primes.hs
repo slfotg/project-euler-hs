@@ -83,9 +83,11 @@ instance Integral PrimeFactors where
         (primeFactors $ quot n m, primeFactors $ rem n m)
     toInteger (PFs n _) = n
 
+instance Semigroup PrimeFactors where
+    (<>) = (*)
+
 instance Monoid PrimeFactors where
     mempty = PFs 1 []
-    mappend = (*)
 
 instance Factoring PrimeFactors where
     factors (PFs _ pes) = foldr accum [mempty] $ map tupleToPfs pes
