@@ -10,7 +10,8 @@ Although Siegbert can always win by taking all the pebbles on his first turn, to
 Let <i>H</i>(<i>N</i>) be that minimal amount for a heap of <i>N</i> pebbles.
 <i>H</i>(1)=1, <i>H</i>(4)=1, <i>H</i>(17)=1, <i>H</i>(8)=8 and <i>H</i>(18)=5
 
-Let <i>G</i>(<i>n</i>) be ∑<sub><i>k</i>=1..<i>n</i></sub><i>H</i>(<i>k</i>).
+Let <i>G</i>(<i>n</i>) be ∑<sub><i>k</i>=1..<i>n</i></sub> <i>H</i>(<i>k</i>).
+
 <i>G</i>(13)=43
 
 Find <i>G</i>(23416728348467685)
